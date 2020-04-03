@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="test">
+      <UniqueIdentifier>{9020c162-3918-4ede-81a8-fab0a9ecb8af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test\test.hpp">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="tests\repeater\test_repeater.hpp" />
+    <ClInclude Include="tests\repeater\host\host.hpp" />
+    <ClInclude Include="tests\repeater\host_loopOverRepeater\host_loopOverRepeater.hpp" />
+    <ClInclude Include="tests\repeater\gpu\gpu.cuh" />
+    <ClInclude Include="util\gpuutil.cuh" />
+    <ClInclude Include="test\crc32.hpp" />
+    <ClInclude Include="tests\repeater\gpu_shared\gpu_shared.cuh" />
+    <ClInclude Include="tests\repeater\gpu_repeaterGrid\gpu_repeaterGrid.cuh" />
+    <ClInclude Include="tests\distance\test_distance.hpp" />
+    <ClInclude Include="tests\distance\gpu_white\gpu.cuh" />
+    <ClInclude Include="tests\distance\gpu_black\gpu.cuh" />
+    <ClInclude Include="tests\distance\gpu_white_cache\gpu.cuh" />
+    <ClInclude Include="tests\repeater\benchmark_repeater.cuh" />
+    <ClInclude Include="tests\distance\benchmark_distance.cuh" />
+    <ClInclude Include="tests\repeater_uv\gpu\gpu.cuh" />
+    <ClInclude Include="tests\repeater_uv\gpu_uvloop\gpu_uvloop.cuh" />
+    <ClInclude Include="tests\repeater_uv\host\host.hpp" />
+    <ClInclude Include="tests\repeater_uv\host_uvloop\host_uvloop.hpp" />
+    <ClInclude Include="tests\repeater_uv\test_repeater.hpp" />
+    <ClInclude Include="tests\repeater_uv\benchmark_repeater_uv.cuh" />
+    <ClInclude Include="tiles\gpumatrix.cuh" />
+    <ClInclude Include="tiles\gpuTiles.cuh" />
+    <ClInclude Include="tiles\tile.hpp" />
+    <ClInclude Include="tiles\tiledMatrix.hpp" />
+    <ClInclude Include="tiles\typedTile.hpp" />
+    <ClInclude Include="tiles\typedTiledMatrix.hpp" />
+    <ClInclude Include="tiles\allocators\hostpinned.hpp" />
+    <ClInclude Include="tiles\allocators\gpumatrix.cuh" />
+    <ClInclude Include="tiles\allocators\gpumatrixlru.cuh" />
+    <ClInclude Include="tiles\allocators\host.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="test\test.cpp">
+      <Filter>test</Filter>
+    </CudaCompile>
+    <CudaCompile Include="main.cu" />
+    <CudaCompile Include="tests\repeater\benchmark_repeater.cu" />
+    <CudaCompile Include="tests\distance\benchmark_distance.cu" />
+    <CudaCompile Include="tests\repeater_uv\benchmark_repeater_uv.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="test\crc32.cpp" />
+    <ClCompile Include="tiles\tile.cpp" />
+    <ClCompile Include="tiles\tiledMatrix.cpp" />
+    <ClCompile Include="tiles\typedTile.cpp" />
+    <ClCompile Include="tiles\typedTiledMatrix.cpp" />
+  </ItemGroup>
+</Project>
