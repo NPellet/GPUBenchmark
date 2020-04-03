@@ -1,18 +1,18 @@
-﻿  Compiling CUDA source file tests\distance\benchmark_distance.cu...
+﻿  Compiling CUDA source file test\test.cpp...
+  Compiling CUDA source file main.cu...
   Compiling CUDA source file tests\repeater\benchmark_repeater.cu...
   Compiling CUDA source file tests\repeater_uv\benchmark_repeater_uv.cu...
-  Compiling CUDA source file test\test.cpp...
-  Compiling CUDA source file main.cu...
+  Compiling CUDA source file tests\distance\benchmark_distance.cu...
   
-  
-  D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\benchmark_distance.cu.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\benchmark_distance.cu" 
-  D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\benchmark_repeater_uv.cu.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\benchmark_repeater_uv.cu" 
+  D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\main.cu.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\main.cu" 
   
   D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\benchmark_repeater.cu.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater\benchmark_repeater.cu" 
   
   D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\test.cpp.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\test\test.cpp" 
   
-  D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\main.cu.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\main.cu" 
+  D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\benchmark_repeater_uv.cu.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\benchmark_repeater_uv.cu" 
+  
+  D:\Boegli\relief_calculator_lib\relief_calculator\benchmark>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_61,code=\"sm_61,compute_61\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0 --ptxas-options=-v --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\benchmark_distance.cu.obj "D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\benchmark_distance.cu" 
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\host_uvloop/host_uvloop.hpp(33): warning : pointless comparison of unsigned integer with zero
             detected during instantiation of "void Tests::RepeaterGeneral::HostUV<SIZE_REPEATER, SIZE_GLOBAL>::testExecute() [with SIZE_REPEATER=100U, SIZE_GLOBAL=8000U]" 
   
@@ -42,8 +42,8 @@ D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\gp
               instantiation of "void Tests::RepeaterGeneral::kernelRepeaterUVLoop<T,SIZE_GLOBAL,SIZE_REPEATER,exch>(T *, uint32_t, uint32_t, const T *, uint32_t, uint32_t, int2, int2, int32_t, int32_t) [with T=float, SIZE_GLOBAL=8000U, SIZE_REPEATER=100U, exch=true]" 
   (98): here
               instantiation of "void Tests::RepeaterGeneral::GPUUV<SIZE_REPEATER, SIZE_GLOBAL, exchange>::testExecute() [with SIZE_REPEATER=100U, SIZE_GLOBAL=8000U, exchange=true]" 
+  
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\gpu_white\../test_distance.hpp(46): warning : missing return statement at end of non-void function "loadTiff<Tile>(const char *) [with Tile=Tests::Distance::Base::Tile]"
-  
             detected during instantiation of "Tile *loadTiff<Tile>(const char *) [with Tile=Tests::Distance::Base::Tile]" 
   (57): here
   
@@ -128,8 +128,8 @@ D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\gp
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\gpu_uvloop/gpu_uvloop.cuh(42): warning : pointless comparison of unsigned integer with zero
   
   main.cu
-  benchmark_repeater.cu
   benchmark_repeater_uv.cu
+  benchmark_repeater.cu
   benchmark_distance.cu
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\host\../../../util/gpuutil.cuh(26): warning C4244: 'return': conversion from 'uint32_t' to 'float', possible loss of data
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\repeater_uv\host\../../../util/gpuutil.cuh(26): warning C4244: 'return': conversion from 'uint32_t' to 'float', possible loss of data
@@ -182,9 +182,7 @@ D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\../..
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\../../tiles/typedTile.hpp(112): warning C4018: '<': signed/unsigned mismatch
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\test_distance.hpp(46): warning C4715: 'loadTiff<typedTile<unsigned char,GPUMatrixAllocator<unsigned char> > >': not all control paths return a value
   crc32.cpp
-  tile.cpp
   tiledMatrix.cpp
-  typedTile.cpp
   typedTiledMatrix.cpp
      Creating library D:\Boegli\relief_calculator_lib\relief_calculator\x64\Release\benchmark.lib and object D:\Boegli\relief_calculator_lib\relief_calculator\x64\Release\benchmark.exp
   Generating code

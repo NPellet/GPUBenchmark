@@ -51,9 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test\crc32.cpp" />
-    <ClCompile Include="tiles\tile.cpp" />
     <ClCompile Include="tiles\tiledMatrix.cpp" />
-    <ClCompile Include="tiles\typedTile.cpp" />
     <ClCompile Include="tiles\typedTiledMatrix.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENCE.md" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,3 @@
-..\..\libtiff-master\libtiff\tiffio.h
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cassert
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cctype
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\cerrno
@@ -152,9 +151,9 @@ C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\texture_types.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.h
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_functions.hpp
 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include\vector_types.h
-D:\Boegli\relief_calculator_lib\libtiff-master\libtiff\tiff.h
-D:\Boegli\relief_calculator_lib\libtiff-master\libtiff\tiffconf.h
-D:\Boegli\relief_calculator_lib\libtiff-master\libtiff\tiffvers.h
+D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\libtiff-master\libtiff\tiff.h
+D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\libtiff-master\libtiff\tiffconf.h
+D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\libtiff-master\libtiff\tiffvers.h
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\..\..\test\test.hpp
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\..\..\tiles\allocators\gpumatrix.cuh
 D:\Boegli\relief_calculator_lib\relief_calculator\benchmark\tests\distance\..\..\tiles\typedTile.hpp

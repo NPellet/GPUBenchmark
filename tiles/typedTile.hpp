@@ -149,16 +149,6 @@ public:
 		return getPoint(y * width + x);
 	}
 
-	void pointIntoStream(uint32_t x, uint32_t y, FILE* stream) {
-		putc((int)hostData[calcIndexAbs(x, y)], stream);
-	}
-
-	void tileIntoStream(FILE* stream) {};
-	void pointIntoBuffer(uint32_t x, uint32_t y, char* buffer, size_t& position) {
-		memcpy(buffer + position, hostData + calcIndexAbs(x, y), sizeof(T));
-		position += sizeof(T);
-	}
-
 	template<typename otherMatrix>
 	void copyTo(typedTile<otherMatrix>* otherTile) {
 		otherTile->allocateDataAndLock();
@@ -182,23 +172,3 @@ public:
 		assert(getHeight() == matB->height);
 	}
 };
-
-// PointIntoStream
-//////////////////
-
-// General definition (cannot be in class, refused by the MSVC compiler)
-//template<typename T, class HostAllocator>
-//void typedTile<T>::pointIntoStream(uint32_t x, uint32_t y, FILE* stream) {
-//}
-// Complete specialization for float
-//template<> void typedTile<float2>::pointIntoStream(uint32_t x, uint32_t y, FILE* stream);
-// Complete specialization for float
-//template<> void typedTile<uint2>::pointIntoStream(uint32_t x, uint32_t y, FILE* stream);
-
-//template<> void typedTile<unsigned char>::tileIntoStream(FILE* stream);
-// PointIntoBuffer
-//////////////////
-
-// uint32 specialization
-template<>
-void typedTile<uint32_t>::pointIntoBuffer(uint32_t x, uint32_t y, char* buffer, size_t& position);
