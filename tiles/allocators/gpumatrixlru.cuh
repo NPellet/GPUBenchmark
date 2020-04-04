@@ -59,7 +59,7 @@ public:
 		gpuDeallocate(false);
 	}
 
-	std::shared_ptr<GPUMatrixImpl<T>> gpuAssertAllocation() {
+	std::shared_ptr<GPUMatrixImpl<T>>->gpuAssertAllocation() {
 		assert(!gpuIsExpired());
 
 		return gpuPtr.lock();

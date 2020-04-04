@@ -1,16 +1,16 @@
-Reporting test "Host repetition with loop over target" with 10 iterations: 863293 us / iteration
+Reporting test "Host repetition with loop over target" with 10 iterations: 856547 us / iteration
 		Width CRC value 7d7508fb
-Reporting test "Host repetition with loop over target, indexed" with 10 iterations: 114122 us / iteration
+Reporting test "Host repetition with loop over target, indexed" with 10 iterations: 114627 us / iteration
 		Width CRC value 7d7508fb
-Reporting test "Host repetition with loop over target, direct to pointer" with 10 iterations: 99030 us / iteration
+Reporting test "Host repetition with loop over target, direct to pointer" with 10 iterations: 99130 us / iteration
 		Width CRC value 7d7508fb
-Reporting test "Host repetition with loop over repeater" with 10 iterations: 915541 us / iteration
+Reporting test "Host repetition with loop over repeater" with 10 iterations: 892713 us / iteration
 		Width CRC value 7d7508fb
-Reporting test "GPU repetition with grid over target - including copy" with 100 iterations: 34117 us / iteration
+Reporting test "GPU repetition with grid over target - including copy" with 100 iterations: 34208 us / iteration
 		Width CRC value 7d7508fb
-Reporting test "GPU repetition with grid over target" with 100 iterations: 1913 us / iteration
+Reporting test "GPU repetition with grid over target" with 100 iterations: 1894 us / iteration
 		Width CRC value 7d7508fb
-Reporting test "GPU repetition with grid over target - uint32" with 100 iterations: 1971 us / iteration
+Reporting test "GPU repetition with grid over target - uint32" with 100 iterations: 1923 us / iteration
 		Width CRC value 7d7508fb
-Reporting test "GPU repetition with grid over repeater" with 100 iterations: 3080 us / iteration
+Reporting test "GPU repetition with grid over repeater" with 100 iterations: 3039 us / iteration
 		Width CRC value 7d7508fb
