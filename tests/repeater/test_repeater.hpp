@@ -36,7 +36,7 @@ namespace Tests {
 
 			void testDestroy() override {
 				target.gpuRetrieve();
-				CRCValue = CRC32(target.getPtr(), SIZE_GLOBAL * SIZE_GLOBAL);
+				verificationValue = CRC32(target.getPtr(), SIZE_GLOBAL * SIZE_GLOBAL);
 			};
 		};
 	}

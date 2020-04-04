@@ -1,0 +1,4 @@
+Reporting test "Simple atomics" with 10 iterations: 114299 us / iteration
+		Width verification value 527d6c0
+Reporting test "Host repetition with loop over target, direct to pointer" with 10 iterations: 107410 us / iteration
+		Width verification value 527d6c0

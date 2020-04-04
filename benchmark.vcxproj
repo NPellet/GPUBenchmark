@@ -89,6 +89,7 @@
   <ItemGroup>
     <CudaCompile Include="main.cu" />
     <CudaCompile Include="tests\distance\benchmark_distance.cu" />
+    <CudaCompile Include="tests\parallelreduction\benchmark_parallelred.cu" />
     <CudaCompile Include="tests\repeater\benchmark_repeater.cu" />
     <CudaCompile Include="tests\repeater_uv\benchmark_repeater_uv.cu" />
     <CudaCompile Include="test\test.cpp" />
@@ -99,6 +100,9 @@
     <ClInclude Include="tests\distance\gpu_white\gpu.cuh" />
     <ClInclude Include="tests\distance\gpu_white_cache\gpu.cuh" />
     <ClInclude Include="tests\distance\test_distance.hpp" />
+    <ClInclude Include="tests\parallelreduction\atomics\atomics.cuh" />
+    <ClInclude Include="tests\parallelreduction\benchmark_parallelred.cuh" />
+    <ClInclude Include="tests\parallelreduction\test_parallelred.hpp" />
     <ClInclude Include="tests\repeater\benchmark_repeater.cuh" />
     <ClInclude Include="tests\repeater\gpu\gpu.cuh" />
     <ClInclude Include="tests\repeater\gpu_repeaterGrid\gpu_repeaterGrid.cuh" />
@@ -125,6 +129,7 @@
     <ClInclude Include="tiles\typedTile.hpp" />
     <ClInclude Include="tiles\typedTiledMatrix.hpp" />
     <ClInclude Include="util\gpuutil.cuh" />
+    <ClInclude Include="util\tiffload.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test\crc32.cpp" />

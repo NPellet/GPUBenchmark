@@ -51,12 +51,11 @@ void benchmark_repeater() {
 		test.execute();
 	}();
 
-	/*
 	[]() {
 		nsTest::GPURepeaterShared< repeaterSize, size > test{ "GPU repetition with grid over target using shared mem", 100 };
 		test.execute();
 	}();
-	*/
+
 	[]() {
 		nsTest::GPURepeaterRepGrid< repeaterSize, size > test{ "GPU repetition with grid over repeater", 100 };
 		test.execute();

@@ -39,6 +39,10 @@
     <ClInclude Include="tiles\allocators\gpumatrix.cuh" />
     <ClInclude Include="tiles\allocators\gpumatrixlru.cuh" />
     <ClInclude Include="tiles\allocators\host.hpp" />
+    <ClInclude Include="tests\parallelreduction\test_parallelred.hpp" />
+    <ClInclude Include="util\tiffload.hpp" />
+    <ClInclude Include="tests\parallelreduction\atomics\atomics.cuh" />
+    <ClInclude Include="tests\parallelreduction\benchmark_parallelred.cuh" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="test\test.cpp">
@@ -48,6 +52,7 @@
     <CudaCompile Include="tests\repeater\benchmark_repeater.cu" />
     <CudaCompile Include="tests\distance\benchmark_distance.cu" />
     <CudaCompile Include="tests\repeater_uv\benchmark_repeater_uv.cu" />
+    <CudaCompile Include="tests\parallelreduction\benchmark_parallelred.cu" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test\crc32.cpp" />
