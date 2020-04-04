@@ -43,5 +43,6 @@ protected:
 	virtual void testExecute() = 0;
 	virtual void testDestroy() = 0;
 
+	uint32_t verificationValue;
 	uint32_t CRCValue;
 };

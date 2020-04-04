@@ -22,7 +22,7 @@ void Test::end() {
 
 void Test::report() {
 	reportStream << "Reporting test \"" << description << "\" with " << std::to_string(numberOfIterations) << " iterations: " << std::to_string((stop - start).count() / 1000 / numberOfIterations) << " us / iteration" << std::endl;
-	reportStream << "\t\tWidth CRC value " << std::hex << CRCValue << std::endl;
+	reportStream << "\t\tWith verification value " << std::hex << verificationValue << std::endl;
 }
 
 void Test::testStart() {
