@@ -49,8 +49,11 @@ public:
 	typedTile(uint32_t w, uint32_t h) : typedTile<T, Allocator>(w, h, 0, 0) { }
 
 	// Initalize from another matrix
-	template<typename U>
-	typedTile(typedTile<U>& from) : typedTile<T, Allocator>(from.getWidth(), from.getHeight(), from.firstPointX, from.firstPointY) {}
+	template<typename U, class UAllocator>
+	typedTile(typedTile<U, UAllocator>& from) : typedTile<T, Allocator>(from.getWidth(), from.getHeight(), from.firstPointX, from.firstPointY) {}
+
+	template<typename U, class UAllocator>
+	typedTile(typedTile<U, UAllocator>* from) : typedTile<T, Allocator>(from->getWidth(), from->getHeight(), from->firstPointX, from->firstPointY) {}
 
 	~typedTile() {
 	}
