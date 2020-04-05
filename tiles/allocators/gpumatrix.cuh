@@ -79,7 +79,7 @@ public:
 		return gpuPtr;
 	}
 
-	virtual std::shared_ptr<GPUMatrixImpl<T>> gpuAllocate(bool copy = true, bool forceCopy = false) {
+	virtual std::shared_ptr<GPUMatrixImpl<T>> inline gpuAllocate(bool copy = true, bool forceCopy = false) {
 		if (gpuPtr != nullptr) {
 			if (forceCopy) {
 				gpuPtr->copyFrom();
@@ -150,9 +150,9 @@ protected:
 	}
 
 	// Creates a new matrix and returns a shared pointer to it
-	std::shared_ptr<GPUMatrixImpl<T>> gpuCreateMatrix(const bool copy) {
+	std::shared_ptr<GPUMatrixImpl<T>> inline gpuCreateMatrix(const bool copy) {
 		auto matrix = std::make_shared<GPUMatrixImpl<T>>(hostData, calcMemSize()); // Shared ptr
-		matrix->cudaSetStream(cudaStream);
+	//	matrix->cudaSetStream(cudaStream);
 
 		if (copy) {
 			matrix->copyFrom();

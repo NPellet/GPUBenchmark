@@ -191,7 +191,7 @@ namespace Tests {
 					sMem[threadId] += sMem[threadId + 32]; __syncwarp();
 				}
 				if (blockLength >= 32) {
-					sMem[threadId] +=  sMem[threadId + 16]; __syncwarp();
+					sMem[threadId] += sMem[threadId + 16]; __syncwarp();
 				}
 				if (blockLength >= 16) {
 					sMem[threadId] += sMem[threadId + 8]; __syncwarp();
@@ -286,12 +286,12 @@ namespace Tests {
 					gridSize.y /= numLoad;
 
 					reduced = new TileZScaled{ gridSize.x, gridSize.y };
-					reduced->fillWith(0);
 					reduced->gpuAllocate();
 
 					kernelCall(input, reduced);
-					checkCudaKernel();
+					//	checkCudaKernel();
 					cudaDeviceSynchronize();
+					verificationValue = reduced->getPointXY(0, 0);
 
 					if (i > 0) {
 						if (gridSize.x == 1 && gridSize.y == 1) {

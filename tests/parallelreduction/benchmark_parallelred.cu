@@ -12,6 +12,11 @@ void benchmark_parallelreduction() {
 		nsTest::GPUAtomics test{ fileName,  "Simple atomics", 1000 };
 		test.execute();
 	}();
+	[&fileName]() {
+		using rep = nsTest::GPUAtomics;
+		rep test{ fileName, "Simple atomics with sequential addressing", 1000 };
+		test.execute(std::bind(&rep::testExecute_seq, &test));
+	}();
 
 	[&fileName]() {
 		using rep = nsTest::GPUAtomics;

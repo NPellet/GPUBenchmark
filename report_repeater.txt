@@ -1,18 +1,8 @@
-Reporting test "Host repetition with loop over target" with 10 iterations: 837772 us / iteration
+Reporting test "Host repetition with loop over target" with 10 iterations: 849803 us / iteration
 		With verification value 7d7508fb
-Reporting test "Host repetition with loop over target, indexed" with 10 iterations: 113439 us / iteration
+Reporting test "Host repetition with loop over target, indexed" with 10 iterations: 116248 us / iteration
 		With verification value 7d7508fb
-Reporting test "Host repetition with loop over target, direct to pointer" with 10 iterations: 98491 us / iteration
+Reporting test "Host repetition with loop over target, direct to pointer" with 10 iterations: 98574 us / iteration
 		With verification value 7d7508fb
-Reporting test "Host repetition with loop over repeater" with 10 iterations: 881787 us / iteration
-		With verification value 7d7508fb
-Reporting test "GPU repetition with grid over target - including copy" with 100 iterations: 34183 us / iteration
-		With verification value 7d7508fb
-Reporting test "GPU repetition with grid over target" with 100 iterations: 1997 us / iteration
-		With verification value 7d7508fb
-Reporting test "GPU repetition with grid over target - uint32" with 100 iterations: 2140 us / iteration
-		With verification value 7d7508fb
-Reporting test "GPU repetition with grid over target using shared mem" with 100 iterations: 725739 us / iteration
-		With verification value 7d7508fb
-Reporting test "GPU repetition with grid over repeater" with 100 iterations: 3165 us / iteration
+Reporting test "Host repetition with loop over repeater" with 10 iterations: 896266 us / iteration
 		With verification value 7d7508fb

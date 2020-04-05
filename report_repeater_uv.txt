@@ -1,10 +1,10 @@
-Reporting test "Host repetition with loop over target, indexed" with 1 iterations: 662434 us / iteration
+Reporting test "Host repetition with loop over target, indexed" with 1 iterations: 662179 us / iteration
 		With verification value 51ab4a4
-Reporting test "Host repetition with loop over UV coords" with 1 iterations: 50819 us / iteration
+Reporting test "Host repetition with loop over UV coords" with 1 iterations: 50686 us / iteration
 		With verification value 51ab4a4
-Reporting test "GPU repetition with loop over target" with 10 iterations: 3817 us / iteration
+Reporting test "GPU repetition with loop over target" with 10 iterations: 2624 us / iteration
 		With verification value 51ab4a4
-Reporting test "GPU repetition with loop over UV coords - reassign value" with 10 iterations: 10908 us / iteration
+Reporting test "GPU repetition with loop over UV coords - reassign value" with 10 iterations: 9887 us / iteration
 		With verification value 51ab4a4
-Reporting test "GPU repetition with loop over UV coords - atomic exchange" with 10 iterations: 6442 us / iteration
+Reporting test "GPU repetition with loop over UV coords - atomic exchange" with 10 iterations: 6361 us / iteration
 		With verification value 51ab4a4
