@@ -84,6 +84,7 @@
       <TargetMachinePlatform>64</TargetMachinePlatform>
       <CodeGeneration>compute_61,sm_61</CodeGeneration>
       <PtxAsOptionV>true</PtxAsOptionV>
+      <GPUDebugInfo>false</GPUDebugInfo>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -102,6 +103,7 @@
     <ClInclude Include="tests\distance\test_distance.hpp" />
     <ClInclude Include="tests\parallelreduction\atomics\atomics.cuh" />
     <ClInclude Include="tests\parallelreduction\benchmark_parallelred.cuh" />
+    <ClInclude Include="tests\parallelreduction\parallelreduction\parallelreduction.cuh" />
     <ClInclude Include="tests\parallelreduction\test_parallelred.hpp" />
     <ClInclude Include="tests\repeater\benchmark_repeater.cuh" />
     <ClInclude Include="tests\repeater\gpu\gpu.cuh" />

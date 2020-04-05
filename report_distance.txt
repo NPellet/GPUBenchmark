@@ -1,2 +1,18 @@
-Reporting test "look for white - atomicMin on black" with 10 iterations: 242667 us / iteration
-		Width CRC value a54ac7bc
+Reporting test "look for white - atomicMin on black" with 10 iterations: 247503 us / iteration
+		With verification value a54ac7bc
+Reporting test "look for white - atomicMin on black - block spreading" with 10 iterations: 253540 us / iteration
+		With verification value a54ac7bc
+Reporting test "look for white - atomicMin on black - neighbour check" with 10 iterations: 50723 us / iteration
+		With verification value a54ac7bc
+Reporting test "look for white - distance check" with 10 iterations: 127209 us / iteration
+		With verification value a54ac7bc
+Reporting test "look for white - distance check - block spread" with 10 iterations: 150515 us / iteration
+		With verification value a54ac7bc
+Reporting test "look for white - neighbour + distance check" with 10 iterations: 78400 us / iteration
+		With verification value a54ac7bc
+Reporting test "look for white - loop restriction" with 10 iterations: 9532 us / iteration
+		With verification value a54ac7bc
+Reporting test "look for white - neighbour check + cached distance kernel" with 10 iterations: 56838 us / iteration
+		With verification value a54ac7bc
+Reporting test "Black" with 10 iterations: 104287 us / iteration
+		With verification value a54ac7bc

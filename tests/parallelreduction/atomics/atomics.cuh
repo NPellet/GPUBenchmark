@@ -26,7 +26,7 @@ namespace Tests {
 			}
 
 			const size_t index = getMatrixIndex<size_t>(col, row, w);
-			atomicAdd(sum, source[index]);
+			atomicAdd((T*)sum, (T)source[index]);
 		}
 
 		template<typename T>
@@ -37,6 +37,10 @@ namespace Tests {
 			T* sum
 			) {
 			__shared__ T sSum;
+			if (threadIdx.x == 0 && threadIdx.y == 0) {
+				sSum = 0;
+			}
+			__syncthreads();
 
 			const int32_t col = blockIdx.x * blockDim.x + threadIdx.x;
 			const int32_t row = blockIdx.y * blockDim.y + threadIdx.y;
@@ -46,10 +50,13 @@ namespace Tests {
 			}
 
 			const size_t index = getMatrixIndex<size_t>(col, row, w);
-			atomicAdd_block(sSum, source[index]);
+			atomicAdd_block(&sSum, source[index]);
 
 			__syncthreads();
-			atomicAdd(sum, sSum);
+
+			if (threadIdx.x == 0 && threadIdx.y == 0) {
+				atomicAdd(sum, sSum);
+			}
 		}
 
 		class GPUAtomics : public Base {
@@ -81,7 +88,6 @@ namespace Tests {
 				cudaDeviceSynchronize();
 
 				checkCuda(cudaMemcpy(&sum, deviceSum, sizeof(zType), cudaMemcpyDeviceToHost));
-
 				verificationValue = static_cast<uint32>(sum);
 			}
 
@@ -92,7 +98,7 @@ namespace Tests {
 				checkCuda(cudaMalloc(&deviceSum, sizeof(zType)));
 				checkCuda(cudaMemcpy(deviceSum, &sum, sizeof(zType), cudaMemcpyHostToDevice));
 
-				kernelSumAll< zType> << < source_rescaled->dimGrid, source_rescaled->dimBlock >> > (
+				kernelSumAll_shared< zType> << < source_rescaled->dimGrid, source_rescaled->dimBlock >> > (
 					source_rescaled->gpuGetPtr(),
 					source_rescaled->getWidth(),
 					source_rescaled->getHeight(),
@@ -103,7 +109,6 @@ namespace Tests {
 				cudaDeviceSynchronize();
 
 				checkCuda(cudaMemcpy(&sum, deviceSum, sizeof(zType), cudaMemcpyDeviceToHost));
-
 				verificationValue = static_cast<uint32>(sum);
 			}
 		};

@@ -43,6 +43,7 @@
     <ClInclude Include="util\tiffload.hpp" />
     <ClInclude Include="tests\parallelreduction\atomics\atomics.cuh" />
     <ClInclude Include="tests\parallelreduction\benchmark_parallelred.cuh" />
+    <ClInclude Include="tests\parallelreduction\parallelreduction\parallelreduction.cuh" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="test\test.cpp">

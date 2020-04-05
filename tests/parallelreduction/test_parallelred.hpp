@@ -35,7 +35,7 @@ namespace Tests {
 		class Base : public Test {
 		protected:
 
-			using zType = float;
+			using zType = unsigned int;
 			using Tile = typedTile<unsigned char, GPUMatrixAllocator<unsigned char>>;
 			using TileZScaled = typedTile<zType, GPUMatrixAllocator<zType>>;
 
@@ -57,8 +57,8 @@ namespace Tests {
 					source_rescaled->gpuGetPtr(),
 					0,
 					255,
-					-100.0,
-					100.0
+					0,
+					10.0
 					);
 
 				checkCudaKernel();
@@ -71,9 +71,12 @@ namespace Tests {
 
 			// Tiles are allocated on the stack, so no need to do memory management in the test setup and destroy
 			void testSetup() override {
+				source_rescaled->gpuAllocate();
 			};
 
 			void testDestroy() override {
+				delete source;
+				delete source_rescaled;
 			};
 		};
 	}

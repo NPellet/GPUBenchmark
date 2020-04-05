@@ -8,6 +8,10 @@
 
 template<typename T>
 class GPUMatrixAllocator : public virtual HostPinnedAllocator<T> {
+private:
+	uint32_t roundUpToMult(uint32_t val) {
+		return pow(2, ceil(log(val) / log(2)));
+	}
 public:
 	GPUMatrixAllocator() { }
 
@@ -22,11 +26,18 @@ public:
 
 	void allocate() override {
 		constexpr int numberThreadPerBlock = 32;
-		int gridSizeX = (getWidth() + numberThreadPerBlock - 1) / numberThreadPerBlock; // getWidth() is a pure virtual. This block cannot be in the constructor.
-		int gridSizeY = (getHeight() + numberThreadPerBlock - 1) / numberThreadPerBlock;
 
-		dimBlock = dim3(numberThreadPerBlock, numberThreadPerBlock);
-		dimGrid = dim3(gridSizeX, gridSizeY);
+		dimBlock = { min(numberThreadPerBlock, roundUpToMult(getWidth())), min(numberThreadPerBlock, roundUpToMult(getHeight())) }; //Make the block an even number
+
+		if (getWidth() == 1) {
+			dimBlock.x = 1;
+		}
+
+		if (getHeight() == 1) {
+			dimBlock.y = 1;
+		}
+
+		dimGrid = { (getWidth() + dimBlock.x - 1) / dimBlock.x, (getHeight() + dimBlock.y - 1) / dimBlock.y };
 
 		HostPinnedAllocator<T>::allocate();
 	}
@@ -118,7 +129,6 @@ protected:
 
 	// Host free
 	void free() override {
-		std::cout << "Freeing" << std::endl;
 		// Free host data
 		HostPinnedAllocator<T>::free();
 		if (gpuPtr != nullptr) { // Invalidate the host with regards to the GPU

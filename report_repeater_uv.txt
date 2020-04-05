@@ -1,10 +1,10 @@
-Reporting test "Host repetition with loop over target, indexed" with 1 iterations: 666731 us / iteration
-		Width CRC value 51ab4a4
-Reporting test "Host repetition with loop over UV coords" with 1 iterations: 51675 us / iteration
-		Width CRC value 51ab4a4
-Reporting test "GPU repetition with loop over target" with 10 iterations: 2777 us / iteration
-		Width CRC value 51ab4a4
-Reporting test "GPU repetition with loop over UV coords - reassign value" with 10 iterations: 9929 us / iteration
-		Width CRC value 51ab4a4
-Reporting test "GPU repetition with loop over UV coords - atomic exchange" with 10 iterations: 8586 us / iteration
-		Width CRC value 51ab4a4
+Reporting test "Host repetition with loop over target, indexed" with 1 iterations: 666482 us / iteration
+		With verification value 51ab4a4
+Reporting test "Host repetition with loop over UV coords" with 1 iterations: 52226 us / iteration
+		With verification value 51ab4a4
+Reporting test "GPU repetition with loop over target" with 10 iterations: 2991 us / iteration
+		With verification value 51ab4a4
+Reporting test "GPU repetition with loop over UV coords - reassign value" with 10 iterations: 11258 us / iteration
+		With verification value 51ab4a4
+Reporting test "GPU repetition with loop over UV coords - atomic exchange" with 10 iterations: 6915 us / iteration
+		With verification value 51ab4a4

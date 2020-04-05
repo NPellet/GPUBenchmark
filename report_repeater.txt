@@ -1,2 +1,6 @@
-Reporting test "Host repetition with loop over target" with 10 iterations: 3287234 us / iteration
-		Width verification value 7d7508fb
+Reporting test "Host repetition with loop over target" with 10 iterations: 857252 us / iteration
+		With verification value 7d7508fb
+Reporting test "Host repetition with loop over target, indexed" with 10 iterations: 110833 us / iteration
+		With verification value 7d7508fb
+Reporting test "Host repetition with loop over target, direct to pointer" with 10 iterations: 99328 us / iteration
+		With verification value 7d7508fb
