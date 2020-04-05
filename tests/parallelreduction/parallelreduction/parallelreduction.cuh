@@ -191,7 +191,7 @@ namespace Tests {
 					sMem[threadId] += sMem[threadId + 32]; __syncwarp();
 				}
 				if (blockLength >= 32) {
-					sMem[threadId] += sMem[threadId + 16]; __syncwarp();
+					sMem[threadId] +=  sMem[threadId + 16]; __syncwarp();
 				}
 				if (blockLength >= 16) {
 					sMem[threadId] += sMem[threadId + 8]; __syncwarp();
@@ -290,6 +290,7 @@ namespace Tests {
 					reduced->gpuAllocate();
 
 					kernelCall(input, reduced);
+					checkCudaKernel();
 					cudaDeviceSynchronize();
 
 					if (i > 0) {

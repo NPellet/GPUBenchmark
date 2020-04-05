@@ -1,18 +1,18 @@
-Reporting test "look for white - atomicMin on black" with 10 iterations: 247503 us / iteration
+Reporting test "look for white - atomicMin on black" with 10 iterations: 248182 us / iteration
 		With verification value a54ac7bc
-Reporting test "look for white - atomicMin on black - block spreading" with 10 iterations: 253540 us / iteration
+Reporting test "look for white - atomicMin on black - block spreading" with 10 iterations: 249463 us / iteration
 		With verification value a54ac7bc
-Reporting test "look for white - atomicMin on black - neighbour check" with 10 iterations: 50723 us / iteration
+Reporting test "look for white - atomicMin on black - neighbour check" with 10 iterations: 51991 us / iteration
 		With verification value a54ac7bc
-Reporting test "look for white - distance check" with 10 iterations: 127209 us / iteration
+Reporting test "look for white - distance check" with 10 iterations: 128293 us / iteration
 		With verification value a54ac7bc
-Reporting test "look for white - distance check - block spread" with 10 iterations: 150515 us / iteration
+Reporting test "look for white - distance check - block spread" with 10 iterations: 154411 us / iteration
 		With verification value a54ac7bc
-Reporting test "look for white - neighbour + distance check" with 10 iterations: 78400 us / iteration
+Reporting test "look for white - neighbour + distance check" with 10 iterations: 81417 us / iteration
 		With verification value a54ac7bc
-Reporting test "look for white - loop restriction" with 10 iterations: 9532 us / iteration
+Reporting test "look for white - loop restriction" with 10 iterations: 9951 us / iteration
 		With verification value a54ac7bc
-Reporting test "look for white - neighbour check + cached distance kernel" with 10 iterations: 56838 us / iteration
+Reporting test "look for white - neighbour check + cached distance kernel" with 10 iterations: 58252 us / iteration
 		With verification value a54ac7bc
-Reporting test "Black" with 10 iterations: 104287 us / iteration
+Reporting test "Black" with 10 iterations: 101921 us / iteration
 		With verification value a54ac7bc

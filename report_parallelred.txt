@@ -1,20 +1,16 @@
-Reporting test "Simple atomics" with 1 iterations: 4204 us / iteration
+Reporting test "Simple atomics" with 1000 iterations: 1622 us / iteration
 		With verification value 13b035e8
-Reporting test "Simple atomics with shared memory" with 1 iterations: 4809 us / iteration
+Reporting test "Simple atomics with shared memory" with 1000 iterations: 1817 us / iteration
 		With verification value 13b035e8
-Reporting test "Parallel reduction" with 1 iterations: 8160 us / iteration
+Reporting test "Parallel reduction" with 1000 iterations: 4972 us / iteration
 		With verification value 13b035e8
-Reporting test "Parallel reduction with 2x loads" with 1 iterations: 8125 us / iteration
+Reporting test "Parallel reduction with 2x loads" with 1000 iterations: 5024 us / iteration
 		With verification value 13b035e8
-Reporting test "Parallel reduction with 2x loads loads and unrolling" with 1000 iterations: 3718 us / iteration
+Reporting test "Parallel reduction with 2x loads loads and unrolling" with 1000 iterations: 3660 us / iteration
 		With verification value 13b035e8
-Reporting test "Parallel reduction with 4x loads and unrolling" with 1000 iterations: 3555 us / iteration
+Reporting test "Parallel reduction with 4x loads and unrolling" with 1000 iterations: 3508 us / iteration
 		With verification value 13b035e8
-Reporting test "Parallel reduction with 8x loads and unrolling" with 1000 iterations: 3571 us / iteration
+Reporting test "Parallel reduction with 8x loads and unrolling" with 1000 iterations: 3737 us / iteration
 		With verification value 13b035e8
-Reporting test "Parallel reduction with 16x loads and unrolling" with 1000 iterations: 3632 us / iteration
+Reporting test "Parallel reduction with 16x loads and unrolling" with 1000 iterations: 3648 us / iteration
 		With verification value 13b035e8
-Reporting test "Parallel reduction with 32x loads and unrolling" with 1000 iterations: 909 us / iteration
-		With verification value 0
-Reporting test "Parallel reduction with 64x loads unrolling" with 1000 iterations: 950 us / iteration
-		With verification value 0

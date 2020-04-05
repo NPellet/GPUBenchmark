@@ -9,24 +9,24 @@ void benchmark_parallelreduction() {
 	const std::string fileName = "./source_distance.tif";
 
 	[&fileName]() {
-		nsTest::GPUAtomics test{ fileName,  "Simple atomics", 1 };
+		nsTest::GPUAtomics test{ fileName,  "Simple atomics", 1000 };
 		test.execute();
 	}();
 
 	[&fileName]() {
 		using rep = nsTest::GPUAtomics;
-		rep test{ fileName, "Simple atomics with shared memory", 1 };
+		rep test{ fileName, "Simple atomics with shared memory", 1000 };
 		test.execute(std::bind(&rep::testExecute_smem, &test));
 	}();
 
 	[&fileName]() {
-		nsTest::GPUParallelReduction test{ fileName,  "Parallel reduction", 1 };
+		nsTest::GPUParallelReduction test{ fileName,  "Parallel reduction", 1000 };
 		test.execute();
 	}();
 
 	[&fileName]() {
 		using rep = nsTest::GPUParallelReduction;
-		rep test{ fileName, "Parallel reduction with 2x loads", 1 };
+		rep test{ fileName, "Parallel reduction with 2x loads", 1000 };
 		test.execute(std::bind(&rep::testExecute_multLoad<2>, &test));
 	}();
 
